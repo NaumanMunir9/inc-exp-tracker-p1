@@ -1,11 +1,11 @@
 import React from "react";
 import "./Transaction.styles.css";
 
-const Transaction = () => {
+const Transaction = ({ transaction }) => {
   return (
     <div>
-      <li className="minus">
-        Cash <span>PKR -400</span>
+      <li className={transaction.amount > 0 ? "plus" : "minus"}>
+        {transaction.transaction} <span>PKR {transaction.amount}</span>
       </li>
     </div>
   );

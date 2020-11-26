@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TransactionContext } from "../../context/TransactionContext";
 import Transaction from "./Transaction/Transaction";
 import "./TransactionList.styles.css";
 
 const TransactionList = () => {
+  const { transactions } = useContext(TransactionContext);
+
   return (
     <div>
-      <h4 className="transactionList-title">Transaction List</h4>
+      <h3 className="transactionList-title">Transaction List</h3>
       <ul className="unordered-list">
-        <Transaction />
+        {transactions.map((transaction) => {
+          return <Transaction transaction={transaction} key={transaction.id} />;
+        })}
       </ul>
     </div>
   );
