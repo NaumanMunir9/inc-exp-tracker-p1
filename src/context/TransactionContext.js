@@ -34,7 +34,9 @@ const TransactionProvider = ({ children }) => {
   };
 
   return (
-    <TransactionContext.Provider value={{ transactions: state.transactions }}>
+    <TransactionContext.Provider
+      value={{ transactions: state.transactions, deleteTransaction }}
+    >
       {children}
     </TransactionContext.Provider>
   );
