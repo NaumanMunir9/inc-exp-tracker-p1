@@ -1,14 +1,30 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { TransactionContext } from "../../context/TransactionContext";
+import { v4 as uuid } from "uuid";
 import "./AddTransaction.styles.css";
 
 const AddTransaction = () => {
   const [transaction, setTransaction] = useState("");
   const [amount, setAmount] = useState(0);
 
+  const { addTransaction } = useContext(TransactionContext);
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    const newTransaction = {
+      id: uuid(),
+      transaction,
+      amount: +amount,
+    };
+
+    addTransaction(newTransaction);
+  };
+
   return (
     <div>
       <h3 className="addTransaction-title">Add Transaction</h3>
-      <form>
+      <form onSubmit={onSubmit}>
         <div>
           <label className="addTransaction-label" htmlFor="text">
             Transaction
