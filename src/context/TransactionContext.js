@@ -26,6 +26,13 @@ export const TransactionContext = createContext(initialState);
 const TransactionProvider = ({ children }) => {
   const [state, dispatch] = useReducer(TransactionReducer, initialState);
 
+  const deleteTransaction = (id) => {
+    dispatch({
+      type: "DELETE_TRANSACTION",
+      payload: id,
+    });
+  };
+
   return (
     <TransactionContext.Provider value={{ transactions: state.transactions }}>
       {children}
