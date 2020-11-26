@@ -1,0 +1,68 @@
+.addTransaction-title {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 40px 0 10px;
+  color: white;
+  text-align: center;
+}
+
+.addTransaction-label {
+  display: inline-block;
+  margin: 10px 0;
+  color: white;
+}
+
+.addAmount-label {
+  display: inline-block;
+  margin: 10px 0;
+  color: white;
+}
+
+.input-text {
+  border: none;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  background-color: #23395d;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input-amount {
+  border: none;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  background-color: #23395d;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+}
+
+.addTransaction-button {
+  cursor: pointer;
+  background-color: #23395d;
+  color: white;
+  border: 0;
+  display: block;
+  font-size: 20px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.addTransaction-button:hover {
+  opacity: 0.6;
+}
+
+.addTransaction-button:active {
+  background-color: #172844;
+}

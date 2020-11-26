@@ -1,0 +1,44 @@
+.income-expense-container {
+  background-color: #23395d;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+.income-title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #00ff00;
+}
+
+.expense-title {
+  margin: 0;
+  text-transform: uppercase;
+  color: #ff3c3c;
+}
+
+.income-div {
+  flex: 1;
+  text-align: center;
+  border-right: 3px solid white;
+}
+
+.expense-div {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
+.income-amount {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  color: white;
+}
+
+.expense-amount {
+  font-size: 20px;
+  letter-spacing: 1px;
+}

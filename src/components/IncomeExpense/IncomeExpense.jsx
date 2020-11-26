@@ -1,13 +1,18 @@
 import React from "react";
+import "./IncomeExpense.styles.css";
 
 const IncomeExpense = () => {
   return (
-    <div>
-      <h3>Income</h3>
-      <div>PKR +0.00</div>
+    <div className="income-expense-container">
+      <div className="income-div">
+        <h3 className="income-title">Income</h3>
+        <p className="income-amount">PKR +0.00</p>
+      </div>
 
-      <h3>Expense</h3>
-      <div>PKR -0.00</div>
+      <div className="expense-div">
+        <h3 className="expense-title">Expense</h3>
+        <p className="expense-amount">PKR -0.00</p>
+      </div>
     </div>
   );
 };

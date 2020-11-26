@@ -1,0 +1,14 @@
+.totalBalance-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.totalBalance-amount {
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #23395d;
+  color: white;
+  border-radius: 12px;
+}

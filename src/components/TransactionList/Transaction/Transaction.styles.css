@@ -1,0 +1,26 @@
+li {
+  background-color: #23395d;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+li:hover {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.494);
+}
+
+li.plus {
+  border-right: 10px solid #00ff00;
+  color: white;
+}
+
+li.minus {
+  border-right: 10px solid #ff3c3c;
+  color: white;
+}
